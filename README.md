@@ -1,16 +1,54 @@
-## Hi there 👋
+<h1 align="center">Hi, I'm Phil 👋</h1>
 
-<!--
-**Philinzag/philinzag** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <strong>Software Engineer & Tech Contractor</strong><br>
+  12+ years shipping production-grade platforms across 5+ industries.
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 About Me
+
+I build scalable, full-stack platforms for clients across **education, automotive, fintech, health, and real estate**. I work as a solo lead or with cross-functional teams, taking products from concept to production deployment.
+
+Currently focused on **AI-powered systems**, **PropTech**, and **automation tooling**.
+
+---
+
+### 🛠️ Tech Stack
+
+**Frontend**
+`React` `Next.js` `TypeScript` `Tailwind CSS` `Framer Motion` `Vue` `Angular`
+
+**Backend**
+`Laravel` `FastAPI` `Node.js` `Python` `C#` `.NET`
+
+**Database & Infrastructure**
+`PostgreSQL` `MySQL` `Redis` `Docker` `GitHub Actions` `cPanel` `Ubuntu` `Nginx`
+
+**AI / ML**
+`OpenAI` `Anthropic Claude` `CrewAI` `LangChain` `TensorFlow`
+
+---
+
+### 💼 What I'm Working On
+
+- 🏗️ **Edullaa** — University admissions platform (React + Laravel 12 + MySQL)
+- 🤖 **CrewAI Trader v6** — AI-powered algorithmic trading platform (FastAPI + React + PostgreSQL)
+- 🚗 **Auto Tech Solutions** — Premium automotive dealership platform (Next.js)
+- 🎯 **Hiring Platform** — End-to-end recruitment SaaS
+
+---
+
+### 📫 Get in Touch
+
+- 📧 **Email:** dev.philinzag@gmail.com
+- 💼 **LinkedIn:** [in/philinzag](https://linkedin.com/in/philinzag)
+- 🌐 **Portfolio:** *coming soon*
+- 🔬 **ORCID:** [0009-0003-4728-0214](https://orcid.org/0009-0003-4728-0214)
+
+---
+
+<p align="center">
+  <em>Open to consulting, contract, and select full-time opportunities.</em>
+</p>
