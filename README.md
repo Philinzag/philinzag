@@ -10,7 +10,7 @@
 
 ### 🚀 About Me
 
-I lead engineering at **SOFNED**, where I design and ship full-stack platforms for clients across **education, automotive, fintech, health, and real estate**. I take products from concept to production — architecture, build, deployment, and ongoing systems work.
+I lead engineering at **SOFNED**, where I design and ship full-stack platforms for clients across **education, automotive, fintech, health, real estate, and travel**. I take products from concept to production — architecture, build, deployment, and ongoing systems work.
 
 My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **automation tooling**.
 
@@ -39,6 +39,7 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 - 💹 **Fintech** — AI-powered algorithmic trading systems, financial dashboards
 - 🏥 **Health** — Disease detection systems, healthcare data platforms
 - 🏘️ **Real Estate / PropTech** — Property platforms, listings & client portals
+- ✈️ **Travel & Tourism** — Tour booking platforms, travel agency systems
 - 💼 **HR / Recruitment** — End-to-end hiring platforms
 
 ---
