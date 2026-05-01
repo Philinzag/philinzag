@@ -1,9 +1,9 @@
-<h1 align="center">Hi, I'm Phil 👋</h1>
+<h1 align="center">Hi, I'm Philip 👋</h1>
 
 <p align="center">
   <strong>Founder / Technical Lead — SOFNED</strong><br>
   AI / Software Engineer & Tech Contractor<br>
-  12+ years shipping production-grade platforms across 5+ industries.
+  Shipping production-grade platforms across 6+ industries.
 </p>
 
 ---
