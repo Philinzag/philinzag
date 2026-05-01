@@ -25,7 +25,7 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 `Laravel` `FastAPI` `Node.js` `Python` `C#` `.NET`
 
 **Database & Infrastructure**  
-`PostgreSQL` `MySQL` `COSMOS DB` `Redis` `Docker` `GitHub Actions` `Ubuntu` `Nginx`
+`PostgreSQL` `MySQL` `Cosmos DB` `Redis` `Docker` `GitHub Actions` `Ubuntu` `Nginx`
 
 **AI / ML**  
 `OpenAI` `Anthropic Claude` `CrewAI` `LangChain` `TensorFlow`
@@ -37,7 +37,7 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 - 🎓 **Education** — School Management systems, University admissions platforms, learning management systems
 - 🚗 **Automotive** — Premium dealership platforms, multi-tenant SaaS for dealers
 - 💹 **Fintech** — AI-powered algorithmic trading systems, financial dashboards
-- 🏥 **Health** — Disease detection systems, healthcare data platforms, Hopital Management Systems
+- 🏥 **Health** — Disease detection systems, healthcare data platforms, Hospital Management Systems
 - 🏘️ **Real Estate / PropTech** — Property platforms, listings & client portals
 - ✈️ **Travel & Tourism** — Tour booking platforms, travel agency systems
 - 💼 **HR / Recruitment** — End-to-end hiring platforms
