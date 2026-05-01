@@ -25,7 +25,7 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 `Laravel` `FastAPI` `Node.js` `Python` `C#` `.NET`
 
 **Database & Infrastructure**  
-`PostgreSQL` `MySQL` `Redis` `Docker` `GitHub Actions` `Ubuntu` `Nginx`
+`PostgreSQL` `MySQL` `COSMOS DB` `Redis` `Docker` `GitHub Actions` `Ubuntu` `Nginx`
 
 **AI / ML**  
 `OpenAI` `Anthropic Claude` `CrewAI` `LangChain` `TensorFlow`
@@ -34,10 +34,10 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 
 ### 🏆 Industry Experience
 
-- 🎓 **Education** — University admissions platforms, learning management systems
+- 🎓 **Education** — School Management systems, University admissions platforms, learning management systems
 - 🚗 **Automotive** — Premium dealership platforms, multi-tenant SaaS for dealers
 - 💹 **Fintech** — AI-powered algorithmic trading systems, financial dashboards
-- 🏥 **Health** — Disease detection systems, healthcare data platforms
+- 🏥 **Health** — Disease detection systems, healthcare data platforms, Hopital Management Systems
 - 🏘️ **Real Estate / PropTech** — Property platforms, listings & client portals
 - ✈️ **Travel & Tourism** — Tour booking platforms, travel agency systems
 - 💼 **HR / Recruitment** — End-to-end hiring platforms
@@ -47,11 +47,17 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Philinzag&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Philinzag&theme=github_dark" alt="Profile Details" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Philinzag&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Philinzag&theme=github_dark" alt="Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Philinzag&theme=github_dark" alt="Most Used Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Philinzag&theme=github_dark" alt="Repos per Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Philinzag&theme=github_dark&utcOffset=0" alt="Productive Time" />
 </p>
 
 ---
