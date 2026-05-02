@@ -65,7 +65,7 @@ My focus areas: **AI-powered systems**, **PropTech**, **SaaS platforms**, and **
 ### 📫 Get in Touch
 
 - 📧 **Email:** philip@sofned.com
-- 🌐 **Portfolio:** phil.sofned.com
+- 🌐 **Portfolio:** [phil.sofned.com](https://phil.sofned.com)
 - 💼 **LinkedIn:** [in/philinzag](https://linkedin.com/in/philinzag)
 - 🔬 **ORCID:** [0009-0003-4728-0214](https://orcid.org/0009-0003-4728-0214)
 
