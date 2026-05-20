@@ -1,0 +1,95 @@
+name: Update Currently Building
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check secret is configured
+        id: gate
+        env:
+          TOKEN: ${{ secrets.PROFILE_READER_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "PROFILE_READER_TOKEN not configured. Skipping auto-update (curated section preserved)."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch most-recently-pushed repos
+        if: steps.gate.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_READER_TOKEN }}
+        run: |
+          gh api -X GET user/repos \
+            -f sort=pushed \
+            -f per_page=50 \
+            -f affiliation=owner,collaborator,organization_member \
+            > all_repos.json
+          jq '[.[]
+                | select(.fork==false)
+                | select(.archived==false)
+                | select((.name|ascii_downcase) != "philinzag")
+              ] | sort_by(.pushed_at) | reverse | .[:4]' all_repos.json > top.json
+          echo "Top repos selected:"
+          jq '.[] | {name, private, owner: .owner.login, pushed_at}' top.json
+
+      - name: Patch README between markers
+        if: steps.gate.outputs.skip == 'false'
+        run: |
+          python3 <<'PY'
+          import json, re
+          with open('top.json', encoding='utf-8') as f:
+              repos = json.load(f)
+          icons = ["🤖", "🏢", "💼", "⚡"]
+          lines = ["<!-- CURRENTLY_BUILDING:START -->"]
+          if not repos:
+              lines.append("- _No recent activity detected._")
+          for i, r in enumerate(repos):
+              icon = icons[i] if i < len(icons) else "🛠️"
+              name = r["name"]
+              desc = (r.get("description") or "Active development").strip()
+              if r.get("private"):
+                  lines.append(f"- {icon} **{name}** — {desc} *(private)*")
+              else:
+                  url = r["html_url"]
+                  lines.append(f"- {icon} **[{name}]({url})** — {desc}")
+          lines.append("<!-- CURRENTLY_BUILDING:END -->")
+          new_block = "\n".join(lines)
+
+          with open('README.md', encoding='utf-8') as f:
+              s = f.read()
+          pattern = re.compile(
+              r"<!-- CURRENTLY_BUILDING:START -->.*?<!-- CURRENTLY_BUILDING:END -->",
+              re.DOTALL,
+          )
+          if not pattern.search(s):
+              raise SystemExit("Markers not found in README.md — aborting.")
+          s2 = pattern.sub(new_block, s)
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(s2)
+          print("README patched.")
+          PY
+
+      - name: Commit if changed
+        if: steps.gate.outputs.skip == 'false'
+        run: |
+          if git diff --quiet README.md; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(readme): auto-update Currently Building section"
+          git push
