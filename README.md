@@ -95,11 +95,11 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 <p align="center">
   <table>
     <tr>
-      <td align="center"><sub>2026 Commits</sub><br><strong>—</strong></td>
-      <td align="center"><sub>Total PRs</sub><br><strong>—</strong></td>
-      <td align="center"><sub>Total Issues</sub><br><strong>—</strong></td>
-      <td align="center"><sub>Repos Active</sub><br><strong>—</strong></td>
-      <td align="center"><sub>Stars Given</sub><br><strong>—</strong></td>
+      <td align="center"><sub>2026 Commits</sub><br><strong>2,989</strong></td>
+      <td align="center"><sub>Total PRs</sub><br><strong>21</strong></td>
+      <td align="center"><sub>Total Issues</sub><br><strong>9</strong></td>
+      <td align="center"><sub>Repos Active</sub><br><strong>2</strong></td>
+      <td align="center"><sub>Stars Given</sub><br><strong>34</strong></td>
     </tr>
   </table>
   <br>
