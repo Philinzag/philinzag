@@ -157,23 +157,29 @@ jobs:
           stars_given = data["starredRepositories"]["totalCount"]
 
           def fmt(n):
-              return f"{n:,}"
+              # URL-encode comma for shields.io
+              return f"{n:,}".replace(",", "%2C")
+
+          color = "22D3EE"
+          style = "for-the-badge"
+          badges = [
+              (f"{year}%20Commits", fmt(commits_year), "git", color),
+              ("Total%20PRs", fmt(prs_total), "github", color),
+              ("Total%20Issues", fmt(issues_total), "githubissues", color),
+              ("Public%20Repos", fmt(public_repos), "github", color),
+              ("Stars%20Given", fmt(stars_given), "starship", color),
+          ]
+          badge_imgs = "\n".join(
+              f'  <img src="https://img.shields.io/badge/{label}-{value}-{c}?style={style}&logo={logo}&logoColor=white" alt="{label}: {value}" />'
+              for label, value, logo, c in badges
+          )
 
           new_block = (
               "<!-- STATS:START -->\n"
               '<p align="center">\n'
-              "  <table>\n"
-              "    <tr>\n"
-              f'      <td align="center"><sub>{year} Commits</sub><br><strong>{fmt(commits_year)}</strong></td>\n'
-              f'      <td align="center"><sub>Total PRs</sub><br><strong>{fmt(prs_total)}</strong></td>\n'
-              f'      <td align="center"><sub>Total Issues</sub><br><strong>{fmt(issues_total)}</strong></td>\n'
-              f'      <td align="center"><sub>Public Repos</sub><br><strong>{fmt(public_repos)}</strong></td>\n'
-              f'      <td align="center"><sub>Stars Given</sub><br><strong>{fmt(stars_given)}</strong></td>\n'
-              "    </tr>\n"
-              "  </table>\n"
-              "  <br>\n"
-              "  <sub><em>Includes private contributions. Auto-updated daily.</em></sub>\n"
+              f"{badge_imgs}\n"
               "</p>\n"
+              '<p align="center"><sub><em>Includes private contributions. Auto-updated daily.</em></sub></p>\n'
               "<!-- STATS:END -->"
           )
 
