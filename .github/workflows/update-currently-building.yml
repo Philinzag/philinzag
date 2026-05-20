@@ -26,6 +26,27 @@ jobs:
             echo "skip_currently_building=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Build exclude list
+        if: steps.gate.outputs.skip_currently_building == 'false'
+        run: |
+          # Read .github/profile-exclude.txt, strip comments + blanks, lowercase, emit as JSON array.
+          if [ -f .github/profile-exclude.txt ]; then
+            python3 <<'PY' > exclude.json
+          import json
+          names = []
+          with open('.github/profile-exclude.txt', encoding='utf-8') as f:
+              for line in f:
+                  line = line.strip()
+                  if not line or line.startswith('#'):
+                      continue
+                  names.append(line.lower())
+          print(json.dumps(names))
+          PY
+          else
+            echo "[]" > exclude.json
+          fi
+          echo "Excluding: $(cat exclude.json)"
+
       - name: Fetch most-recently-pushed repos
         if: steps.gate.outputs.skip_currently_building == 'false'
         env:
@@ -36,12 +57,17 @@ jobs:
             -f per_page=50 \
             -f affiliation=owner,collaborator,organization_member \
             > all_repos.json
-          jq '[.[]
-                | select(.fork==false)
-                | select(.archived==false)
-                | select((.name|ascii_downcase) != "philinzag")
-              ] | sort_by(.pushed_at) | reverse | .[:4]' all_repos.json > top.json
-          echo "Top repos selected:"
+
+          jq --slurpfile excl exclude.json '
+            [.[]
+              | select(.fork==false)
+              | select(.archived==false)
+              | select((.name|ascii_downcase) != "philinzag")
+              | select(([.name | ascii_downcase] | inside($excl[0])) | not)
+            ] | sort_by(.pushed_at) | reverse | .[:4]
+          ' all_repos.json > top.json
+
+          echo "Top repos selected (after exclusion):"
           jq '.[] | {name, private, owner: .owner.login, pushed_at}' top.json
 
       - name: Patch Currently Building section
@@ -88,14 +114,12 @@ jobs:
           from datetime import datetime, timezone
 
           now = datetime.now(timezone.utc)
-          years = now.year - 2013   # engineering tenure start
+          years = now.year - 2013
           month_year = now.strftime("%B %Y")
 
           with open('README.md', encoding='utf-8') as f:
               s = f.read()
 
-          # 1. Tenure year count inside the typing SVG URL
-          #    Match e.g. "13%2B+years+in+engineering" and replace the digits.
           tenure_pat = re.compile(r"(\d{1,2})(%2B\+years\+in\+engineering)")
           if tenure_pat.search(s):
               s = tenure_pat.sub(lambda m: f"{years}{m.group(2)}", s)
@@ -103,7 +127,6 @@ jobs:
           else:
               print("Tenure pattern not found in URL — skipping.")
 
-          # 2. LAST_UPDATED marker
           last_pat = re.compile(
               r"<!-- LAST_UPDATED:START -->.*?<!-- LAST_UPDATED:END -->",
               re.DOTALL,

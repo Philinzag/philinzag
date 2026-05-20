@@ -1,0 +1,6 @@
+# Repos to hide from the "Currently Building" auto-rotation.
+# One repo name per line (case-insensitive, name only — no owner prefix).
+# Lines starting with # are comments. Empty lines are ignored.
+# Edit this file and the next workflow run will respect it.
+
+lottraq
