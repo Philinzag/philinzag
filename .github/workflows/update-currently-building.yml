@@ -124,13 +124,11 @@ jobs:
                     totalIssueContributions
                     totalPullRequestContributions
                     restrictedContributionsCount
-                    commitContributionsByRepository(maxRepositories: 100) {
-                      repository { nameWithOwner }
-                    }
                   }
                   pullRequests(states: [OPEN, MERGED, CLOSED]) { totalCount }
                   issues(states: [OPEN, CLOSED]) { totalCount }
                   starredRepositories { totalCount }
+                  repositories(privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false) { totalCount }
                 }
               }
             ' > stats.json
@@ -140,7 +138,7 @@ jobs:
             prs_total: .pullRequests.totalCount,
             issues_total: .issues.totalCount,
             stars_given: .starredRepositories.totalCount,
-            repos_active: (.contributionsCollection.commitContributionsByRepository | length)
+            public_repos: .repositories.totalCount
           }' stats.json
 
           python3 <<'PY'
@@ -155,7 +153,7 @@ jobs:
           commits_year = cc["totalCommitContributions"] + cc["restrictedContributionsCount"]
           prs_total = data["pullRequests"]["totalCount"]
           issues_total = data["issues"]["totalCount"]
-          repos_active = len(cc["commitContributionsByRepository"])
+          public_repos = data["repositories"]["totalCount"]
           stars_given = data["starredRepositories"]["totalCount"]
 
           def fmt(n):
@@ -169,7 +167,7 @@ jobs:
               f'      <td align="center"><sub>{year} Commits</sub><br><strong>{fmt(commits_year)}</strong></td>\n'
               f'      <td align="center"><sub>Total PRs</sub><br><strong>{fmt(prs_total)}</strong></td>\n'
               f'      <td align="center"><sub>Total Issues</sub><br><strong>{fmt(issues_total)}</strong></td>\n'
-              f'      <td align="center"><sub>Repos Active</sub><br><strong>{fmt(repos_active)}</strong></td>\n'
+              f'      <td align="center"><sub>Public Repos</sub><br><strong>{fmt(public_repos)}</strong></td>\n'
               f'      <td align="center"><sub>Stars Given</sub><br><strong>{fmt(stars_given)}</strong></td>\n'
               "    </tr>\n"
               "  </table>\n"
@@ -190,7 +188,7 @@ jobs:
           s2 = pattern.sub(new_block, s)
           with open('README.md', 'w', encoding='utf-8') as f:
               f.write(s2)
-          print(f"Stats patched: {commits_year} commits, {prs_total} PRs, {issues_total} issues, {repos_active} repos, {stars_given} stars given.")
+          print(f"Stats patched: {commits_year} commits, {prs_total} PRs, {issues_total} issues, {public_repos} public repos, {stars_given} stars given.")
           PY
 
       - name: Patch tenure year count and last-updated stamp
