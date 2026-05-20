@@ -91,6 +91,16 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Philinzag&theme=tokyo-night&hide_border=true&area=true" />
 </p>
 
+### 🐍 Contributions Snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Philinzag/philinzag/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Philinzag/philinzag/output/github-contribution-grid-snake.svg" />
+    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/Philinzag/philinzag/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
 ---
 
 ### 📫 Get in Touch
