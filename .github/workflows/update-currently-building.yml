@@ -1,4 +1,4 @@
-name: Update Currently Building
+name: Update Profile README
 
 on:
   schedule:
@@ -14,20 +14,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check secret is configured
+      - name: Check Currently-Building secret is configured
         id: gate
         env:
           TOKEN: ${{ secrets.PROFILE_READER_TOKEN }}
         run: |
           if [ -z "$TOKEN" ]; then
-            echo "PROFILE_READER_TOKEN not configured. Skipping auto-update (curated section preserved)."
-            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "PROFILE_READER_TOKEN not configured. Skipping Currently Building auto-update (other patches still run)."
+            echo "skip_currently_building=true" >> "$GITHUB_OUTPUT"
           else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "skip_currently_building=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Fetch most-recently-pushed repos
-        if: steps.gate.outputs.skip == 'false'
+        if: steps.gate.outputs.skip_currently_building == 'false'
         env:
           GH_TOKEN: ${{ secrets.PROFILE_READER_TOKEN }}
         run: |
@@ -44,8 +44,8 @@ jobs:
           echo "Top repos selected:"
           jq '.[] | {name, private, owner: .owner.login, pushed_at}' top.json
 
-      - name: Patch README between markers
-        if: steps.gate.outputs.skip == 'false'
+      - name: Patch Currently Building section
+        if: steps.gate.outputs.skip_currently_building == 'false'
         run: |
           python3 <<'PY'
           import json, re
@@ -74,15 +74,54 @@ jobs:
               re.DOTALL,
           )
           if not pattern.search(s):
-              raise SystemExit("Markers not found in README.md — aborting.")
+              raise SystemExit("CURRENTLY_BUILDING markers not found.")
           s2 = pattern.sub(new_block, s)
           with open('README.md', 'w', encoding='utf-8') as f:
               f.write(s2)
-          print("README patched.")
+          print("Currently Building patched.")
+          PY
+
+      - name: Patch tenure year count and last-updated stamp
+        run: |
+          python3 <<'PY'
+          import re
+          from datetime import datetime, timezone
+
+          now = datetime.now(timezone.utc)
+          years = now.year - 2013   # engineering tenure start
+          month_year = now.strftime("%B %Y")
+
+          with open('README.md', encoding='utf-8') as f:
+              s = f.read()
+
+          # 1. Tenure year count inside the typing SVG URL
+          #    Match e.g. "13%2B+years+in+engineering" and replace the digits.
+          tenure_pat = re.compile(r"(\d{1,2})(%2B\+years\+in\+engineering)")
+          if tenure_pat.search(s):
+              s = tenure_pat.sub(lambda m: f"{years}{m.group(2)}", s)
+              print(f"Tenure patched to {years}+ years.")
+          else:
+              print("Tenure pattern not found in URL — skipping.")
+
+          # 2. LAST_UPDATED marker
+          last_pat = re.compile(
+              r"<!-- LAST_UPDATED:START -->.*?<!-- LAST_UPDATED:END -->",
+              re.DOTALL,
+          )
+          if last_pat.search(s):
+              s = last_pat.sub(
+                  f"<!-- LAST_UPDATED:START -->Last updated: {month_year}<!-- LAST_UPDATED:END -->",
+                  s,
+              )
+              print(f"Last-updated stamped: {month_year}.")
+          else:
+              print("LAST_UPDATED markers not found — skipping.")
+
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(s)
           PY
 
       - name: Commit if changed
-        if: steps.gate.outputs.skip == 'false'
         run: |
           if git diff --quiet README.md; then
             echo "No changes to commit."
@@ -91,5 +130,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore(readme): auto-update Currently Building section"
+          git commit -m "chore(readme): auto-update profile (currently building / tenure / timestamp)"
           git push
