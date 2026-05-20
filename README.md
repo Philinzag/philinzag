@@ -106,3 +106,5 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
   <br><br>
   <a href="mailto:philip@sofned.com"><img src="https://img.shields.io/badge/Let's_Talk-Available_for_hire-22D3EE?style=for-the-badge" /></a>
 </p>
+
+<p align="center"><sub><!-- LAST_UPDATED:START -->Last updated: May 2026<!-- LAST_UPDATED:END --></sub></p>
