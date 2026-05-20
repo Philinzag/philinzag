@@ -26,9 +26,10 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **[crewai-trader-v6](https://github.com/Philinzag/crewai-trader-v6)** — Autonomous AI trading platform with multi-agent market analysis, broker auto-execution (MT5 / cTrader / Deriv), and real-time Telegram alerts
-- 🏢 **sofned-agency-system** — Internal SOFNED operations platform: client management, project tracking, automated reporting *(private)*
-- 💼 **[harehire](https://github.com/Vintage-Travel-Consult/harehire)** — End-to-end hiring platform with AI candidate screening
+- 🤖 **[greenwich-upj-sustainability-project](https://github.com/TechOneITSolutions/greenwich-upj-sustainability-project)** — Active development
+- 🏢 **crewai-trader-v6** — Active development *(private)*
+- 💼 **sofned-agency-system** — Sofned Autonomous Agency System — AI-operated business backend for SFND Technologies LTD. Forked from CrewAI Trader V6. *(private)*
+- ⚡ **lottraq** — Lottraq is an online technology platform being developed for the automotive industry in Ghana. Its purpose is to connect parties who wish to buy, sell and transact vehicles through a single digital interface. The platform serves private sellers, registered dealers, vehicle buyers and institutional partners such as banks and insurance companies. *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub>
