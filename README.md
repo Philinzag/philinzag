@@ -51,6 +51,24 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 
 ---
 
+### 🤝 Services
+
+I take focused, well-scoped engagements in the areas below. Most projects run 4–12 weeks; longer retainers available for ongoing systems work.
+
+| Service | What that looks like |
+|---|---|
+| 🤖 **AI / ML Systems** | CrewAI multi-agent workflows · LangChain pipelines · OpenAI & Anthropic Claude integrations · Autonomous trading & ops agents |
+| ⚡ **FastAPI / Python Backends** | Production APIs · Multi-tenant SaaS · Async pipelines · Auth · Stripe & payment integrations · Encrypted credential stores |
+| 💹 **Trading & Fintech Automation** | Algorithmic strategy engines · Broker adapters (MT5 · cTrader · Deriv) · Real-time signals · Risk gates · Telegram bot interfaces |
+| 🌐 **Full-Stack SaaS Builds** | End-to-end product builds: React + TypeScript frontends on FastAPI or Laravel backends · Tailwind + Radix UI · CI/CD · Docker deployments |
+
+<p align="center">
+  <a href="https://cal.com/project-sofned-mnut0u/30min"><img src="https://img.shields.io/badge/Book_a_30--min_call-Cal.com-22D3EE?style=for-the-badge&logo=googlecalendar&logoColor=white" /></a>
+  <a href="mailto:philip@sofned.com?subject=Project%20inquiry"><img src="https://img.shields.io/badge/Email_me-philip%40sofned.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+---
+
 ### 🏆 Industry Experience
 
 | Industry | What I've Built |
@@ -115,7 +133,8 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 <p align="center">
   <em>Open to select consulting and contract engagements.</em>
   <br><br>
-  <a href="mailto:philip@sofned.com"><img src="https://img.shields.io/badge/Let's_Talk-Available_for_hire-22D3EE?style=for-the-badge" /></a>
+  <a href="https://cal.com/project-sofned-mnut0u/30min"><img src="https://img.shields.io/badge/Book_a_30--min_call-Cal.com-22D3EE?style=for-the-badge&logo=googlecalendar&logoColor=white" /></a>
+  <a href="mailto:philip@sofned.com?subject=Project%20inquiry"><img src="https://img.shields.io/badge/Email-philip%40sofned.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 <p align="center"><sub><!-- LAST_UPDATED:START -->Last updated: May 2026<!-- LAST_UPDATED:END --></sub></p>
