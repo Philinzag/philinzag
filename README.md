@@ -91,8 +91,23 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Philinzag&theme=github_dark" alt="Profile Details" />
 </p>
 
+<!-- STATS:START -->
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Philinzag&theme=github_dark" alt="Stats" />
+  <table>
+    <tr>
+      <td align="center"><sub>2026 Commits</sub><br><strong>—</strong></td>
+      <td align="center"><sub>Total PRs</sub><br><strong>—</strong></td>
+      <td align="center"><sub>Total Issues</sub><br><strong>—</strong></td>
+      <td align="center"><sub>Repos Active</sub><br><strong>—</strong></td>
+      <td align="center"><sub>Stars Given</sub><br><strong>—</strong></td>
+    </tr>
+  </table>
+  <br>
+  <sub><em>Includes private contributions. Auto-updated daily.</em></sub>
+</p>
+<!-- STATS:END -->
+
+<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Philinzag&theme=github_dark" alt="Most Used Languages" />
 </p>
 

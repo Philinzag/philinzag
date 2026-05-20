@@ -107,6 +107,92 @@ jobs:
           print("Currently Building patched.")
           PY
 
+      - name: Fetch and patch self-hosted stats
+        if: steps.gate.outputs.skip_currently_building == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_READER_TOKEN }}
+        run: |
+          YEAR=$(date -u +%Y)
+          gh api graphql \
+            -F from="${YEAR}-01-01T00:00:00Z" \
+            -F to="${YEAR}-12-31T23:59:59Z" \
+            -f query='
+              query($from: DateTime!, $to: DateTime!) {
+                viewer {
+                  contributionsCollection(from: $from, to: $to) {
+                    totalCommitContributions
+                    totalIssueContributions
+                    totalPullRequestContributions
+                    restrictedContributionsCount
+                    commitContributionsByRepository(maxRepositories: 100) {
+                      repository { nameWithOwner }
+                    }
+                  }
+                  pullRequests(states: [OPEN, MERGED, CLOSED]) { totalCount }
+                  issues(states: [OPEN, CLOSED]) { totalCount }
+                  starredRepositories { totalCount }
+                }
+              }
+            ' > stats.json
+          echo "Raw stats summary:"
+          jq '.data.viewer | {
+            commits_year: (.contributionsCollection.totalCommitContributions + .contributionsCollection.restrictedContributionsCount),
+            prs_total: .pullRequests.totalCount,
+            issues_total: .issues.totalCount,
+            stars_given: .starredRepositories.totalCount,
+            repos_active: (.contributionsCollection.commitContributionsByRepository | length)
+          }' stats.json
+
+          python3 <<'PY'
+          import json, re
+          from datetime import datetime, timezone
+
+          with open('stats.json', encoding='utf-8') as f:
+              data = json.load(f)["data"]["viewer"]
+          cc = data["contributionsCollection"]
+          year = datetime.now(timezone.utc).year
+
+          commits_year = cc["totalCommitContributions"] + cc["restrictedContributionsCount"]
+          prs_total = data["pullRequests"]["totalCount"]
+          issues_total = data["issues"]["totalCount"]
+          repos_active = len(cc["commitContributionsByRepository"])
+          stars_given = data["starredRepositories"]["totalCount"]
+
+          def fmt(n):
+              return f"{n:,}"
+
+          new_block = (
+              "<!-- STATS:START -->\n"
+              '<p align="center">\n'
+              "  <table>\n"
+              "    <tr>\n"
+              f'      <td align="center"><sub>{year} Commits</sub><br><strong>{fmt(commits_year)}</strong></td>\n'
+              f'      <td align="center"><sub>Total PRs</sub><br><strong>{fmt(prs_total)}</strong></td>\n'
+              f'      <td align="center"><sub>Total Issues</sub><br><strong>{fmt(issues_total)}</strong></td>\n'
+              f'      <td align="center"><sub>Repos Active</sub><br><strong>{fmt(repos_active)}</strong></td>\n'
+              f'      <td align="center"><sub>Stars Given</sub><br><strong>{fmt(stars_given)}</strong></td>\n'
+              "    </tr>\n"
+              "  </table>\n"
+              "  <br>\n"
+              "  <sub><em>Includes private contributions. Auto-updated daily.</em></sub>\n"
+              "</p>\n"
+              "<!-- STATS:END -->"
+          )
+
+          with open('README.md', encoding='utf-8') as f:
+              s = f.read()
+          pattern = re.compile(
+              r"<!-- STATS:START -->.*?<!-- STATS:END -->",
+              re.DOTALL,
+          )
+          if not pattern.search(s):
+              raise SystemExit("STATS markers not found.")
+          s2 = pattern.sub(new_block, s)
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(s2)
+          print(f"Stats patched: {commits_year} commits, {prs_total} PRs, {issues_total} issues, {repos_active} repos, {stars_given} stars given.")
+          PY
+
       - name: Patch tenure year count and last-updated stamp
         run: |
           python3 <<'PY'
@@ -153,5 +239,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore(readme): auto-update profile (currently building / tenure / timestamp)"
+          git commit -m "chore(readme): auto-update profile (currently building / stats / tenure / timestamp)"
           git push
