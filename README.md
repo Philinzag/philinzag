@@ -32,7 +32,7 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 - ⚡ **[greenwich-upj-sustainability-project](https://github.com/TechOneITSolutions/greenwich-upj-sustainability-project)** — Active development
 <!-- CURRENTLY_BUILDING:END -->
 
-<sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub>
+<!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
 
 ---
 
