@@ -27,9 +27,9 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 
 <!-- CURRENTLY_BUILDING:START -->
 - 🤖 **SYDI-WEB** — Active development *(private)*
-- 🏢 **[greenwich-upj-sustainability-project](https://github.com/TechOneITSolutions/greenwich-upj-sustainability-project)** — Active development
-- 💼 **crewai-trader-v6** — Active development *(private)*
-- ⚡ **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 🏢 **auto-tech** — Active development *(private)*
+- 💼 **[greenwich-upj-sustainability-project](https://github.com/TechOneITSolutions/greenwich-upj-sustainability-project)** — Active development
+- ⚡ **out-ai-saas** — Adams ai saas *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
