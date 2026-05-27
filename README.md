@@ -26,10 +26,10 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **SYDI-WEB** — Active development *(private)*
-- 🏢 **auto-tech** — Active development *(private)*
-- 💼 **[greenwich-upj-sustainability-project](https://github.com/TechOneITSolutions/greenwich-upj-sustainability-project)** — Active development
-- ⚡ **out-ai-saas** — Adams ai saas *(private)*
+- 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 🏢 **sofned-agency-system** — Sofned Autonomous Agency System — AI-operated business backend for SFND Technologies LTD. Forked from CrewAI Trader V6. *(private)*
+- 💼 **SYDI-WEB** — Active development *(private)*
+- ⚡ **auto-tech** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-3%2C027-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 3%2C027" />
-  <img src="https://img.shields.io/badge/Total%20PRs-1%2C041-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C041" />
-  <img src="https://img.shields.io/badge/Total%20Issues-15-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 15" />
+  <img src="https://img.shields.io/badge/2026%20Commits-3%2C052-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 3%2C052" />
+  <img src="https://img.shields.io/badge/Total%20PRs-1%2C048-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C048" />
+  <img src="https://img.shields.io/badge/Total%20Issues-21-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 21" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-34-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 34" />
 </p>
