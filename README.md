@@ -26,10 +26,10 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **crewai-trader-v6** — Active development *(private)*
-- 🏢 **onlyev** — A repo for all EV agentic marketplace *(private)*
-- 💼 **deriv-gowithflow-mt5** — MT5 rewrite of the GoWithFlow martingale+hedge EA, implemented per Kashif Nawaz 2018 strategy spec, hardened for Deriv synthetic indices and XAUUSD. *(private)*
-- ⚡ **deriv_bot** — Active development *(private)*
+- 🤖 **deriv-gowithflow-mt5** — MT5 rewrite of the GoWithFlow martingale+hedge EA, implemented per Kashif Nawaz 2018 strategy spec, hardened for Deriv synthetic indices and XAUUSD. *(private)*
+- 🏢 **crewai-trader-v6** — Active development *(private)*
+- 💼 **out-ai-saas** — Adams ai saas *(private)*
+- ⚡ **onlyev** — A repo for all EV agentic marketplace *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-3%2C749-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 3%2C749" />
-  <img src="https://img.shields.io/badge/Total%20PRs-1%2C202-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C202" />
-  <img src="https://img.shields.io/badge/Total%20Issues-128-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 128" />
+  <img src="https://img.shields.io/badge/2026%20Commits-3%2C801-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 3%2C801" />
+  <img src="https://img.shields.io/badge/Total%20PRs-1%2C215-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C215" />
+  <img src="https://img.shields.io/badge/Total%20Issues-141-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 141" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-36-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 36" />
 </p>
