@@ -26,10 +26,10 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
-- 🏢 **ghana-roots-connect** — Active development *(private)*
+- 🤖 **outweb-api** — OnlyUsedTesla Main Global Web Application *(private)*
+- 🏢 **out-web** — OnlyUsedTesla Main Web Application *(private)*
 - 💼 **crewai-trader-v6** — Active development *(private)*
-- ⚡ **dealer-inventory-import-app** — Active development *(private)*
+- ⚡ **crewai-trader-ui** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-4%2C749-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 4%2C749" />
-  <img src="https://img.shields.io/badge/Total%20PRs-1%2C401-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C401" />
-  <img src="https://img.shields.io/badge/Total%20Issues-596-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 596" />
+  <img src="https://img.shields.io/badge/2026%20Commits-5%2C294-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 5%2C294" />
+  <img src="https://img.shields.io/badge/Total%20PRs-1%2C414-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C414" />
+  <img src="https://img.shields.io/badge/Total%20Issues-1%2C117-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 1%2C117" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-36-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 36" />
 </p>
