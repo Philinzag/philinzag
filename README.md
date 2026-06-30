@@ -26,10 +26,10 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
-- 🏢 **ghana-roots-connect** — Active development *(private)*
-- 💼 **dealer-inventory-import-app** — Active development *(private)*
-- ⚡ **prestij-software-solutions** — Active development *(private)*
+- 🤖 **Sofned-Website** — Sofned ai integrated website *(private)*
+- 🏢 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 💼 **ghana-roots-connect** — Active development *(private)*
+- ⚡ **dealer-inventory-import-app** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
