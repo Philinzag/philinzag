@@ -26,8 +26,8 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **Sofned-Website** — Sofned ai integrated website *(private)*
-- 🏢 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 🏢 **Sofned-Website** — Sofned ai integrated website *(private)*
 - 💼 **ghana-roots-connect** — Active development *(private)*
 - ⚡ **dealer-inventory-import-app** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-6%2C395-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 6%2C395" />
-  <img src="https://img.shields.io/badge/Total%20PRs-1%2C588-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C588" />
-  <img src="https://img.shields.io/badge/Total%20Issues-1%2C645-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 1%2C645" />
+  <img src="https://img.shields.io/badge/2026%20Commits-6%2C432-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 6%2C432" />
+  <img src="https://img.shields.io/badge/Total%20PRs-1%2C595-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C595" />
+  <img src="https://img.shields.io/badge/Total%20Issues-1%2C659-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 1%2C659" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-36-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 36" />
 </p>
@@ -147,4 +147,4 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
   <a href="mailto:philip@sofned.com?subject=Project%20inquiry"><img src="https://img.shields.io/badge/Email-philip%40sofned.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
-<p align="center"><sub><!-- LAST_UPDATED:START -->Last updated: June 2026<!-- LAST_UPDATED:END --></sub></p>
+<p align="center"><sub><!-- LAST_UPDATED:START -->Last updated: July 2026<!-- LAST_UPDATED:END --></sub></p>
