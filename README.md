@@ -26,8 +26,8 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **crewai-trader-v6** — Active development *(private)*
-- 🏢 **tech-mentoring-africa** — Active development *(private)*
+- 🤖 **tech-mentoring-africa** — Active development *(private)*
+- 🏢 **crewai-trader-v6** — Active development *(private)*
 - 💼 **tma-backend** — Active development *(private)*
 - ⚡ **onlyev** — A repo for all EV agentic marketplace *(private)*
 <!-- CURRENTLY_BUILDING:END -->
