@@ -26,9 +26,9 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **crewai-trader-v6** — Active development *(private)*
+- 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
 - 🏢 **awolyf-journal** — Active development *(private)*
-- 💼 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 💼 **crewai-trader-v6** — Active development *(private)*
 - ⚡ **ghana-roots-connect** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-8%2C633-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 8%2C633" />
-  <img src="https://img.shields.io/badge/Total%20PRs-1%2C988-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 1%2C988" />
-  <img src="https://img.shields.io/badge/Total%20Issues-1%2C925-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 1%2C925" />
+  <img src="https://img.shields.io/badge/2026%20Commits-8%2C698-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 8%2C698" />
+  <img src="https://img.shields.io/badge/Total%20PRs-2%2C009-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C009" />
+  <img src="https://img.shields.io/badge/Total%20Issues-1%2C949-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 1%2C949" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-36-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 36" />
 </p>
