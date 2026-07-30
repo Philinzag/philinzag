@@ -26,10 +26,10 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
-- 🏢 **crewai-trader-v6** — Active development *(private)*
-- 💼 **tech-mentoring-africa** — Active development *(private)*
-- ⚡ **LinkedIn-mcp** — Active development *(private)*
+- 🤖 **tma-backend** — Active development *(private)*
+- 🏢 **tech-mentoring-africa** — Active development *(private)*
+- 💼 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- ⚡ **dealer-inventory-import-app** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
 <!-- <sub><em>Auto-updated daily by <a href=".github/workflows/update-currently-building.yml">update-currently-building</a></em></sub> -->
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-9%2C018-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C018" />
-  <img src="https://img.shields.io/badge/Total%20PRs-2%2C123-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C123" />
-  <img src="https://img.shields.io/badge/Total%20Issues-2%2C056-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C056" />
+  <img src="https://img.shields.io/badge/2026%20Commits-9%2C063-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C063" />
+  <img src="https://img.shields.io/badge/Total%20PRs-2%2C131-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C131" />
+  <img src="https://img.shields.io/badge/Total%20Issues-2%2C074-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C074" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-36-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 36" />
 </p>
