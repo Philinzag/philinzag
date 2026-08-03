@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4â
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-9%2C315-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C315" />
-  <img src="https://img.shields.io/badge/Total%20PRs-2%2C175-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C175" />
-  <img src="https://img.shields.io/badge/Total%20Issues-2%2C117-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C117" />
+  <img src="https://img.shields.io/badge/2026%20Commits-9%2C343-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C343" />
+  <img src="https://img.shields.io/badge/Total%20PRs-2%2C183-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C183" />
+  <img src="https://img.shields.io/badge/Total%20Issues-2%2C121-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C121" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-36-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 36" />
 </p>
