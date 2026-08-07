@@ -27,8 +27,8 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 
 <!-- CURRENTLY_BUILDING:START -->
 - 🤖 **onlyev** — A repo for all EV agentic marketplace *(private)*
-- 🏢 **tech-mentoring-africa** — Active development *(private)*
-- 💼 **onlyusedtesla-ai** — OnlyUsedTesla.ai — standalone Vercel + Supabase rebuild of the retiring Azure OUT-AI-SAAS. Phase 1: 'We're upgrading' placeholder. *(private)*
+- 🏢 **onlyusedtesla-ai** — OnlyUsedTesla.ai — standalone Vercel + Supabase rebuild of the retiring Azure OUT-AI-SAAS. Phase 1: 'We're upgrading' placeholder. *(private)*
+- 💼 **tech-mentoring-africa** — Active development *(private)*
 - ⚡ **tma-backend** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-9%2C477-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C477" />
-  <img src="https://img.shields.io/badge/Total%20PRs-2%2C220-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C220" />
-  <img src="https://img.shields.io/badge/Total%20Issues-2%2C142-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C142" />
+  <img src="https://img.shields.io/badge/2026%20Commits-9%2C527-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C527" />
+  <img src="https://img.shields.io/badge/Total%20PRs-2%2C237-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C237" />
+  <img src="https://img.shields.io/badge/Total%20Issues-2%2C147-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C147" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-37-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 37" />
 </p>
