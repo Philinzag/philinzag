@@ -26,9 +26,9 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **prestij-software-solutions** — Active development *(private)*
-- 🏢 **tech-mentoring-africa** — Active development *(private)*
-- 💼 **tma-backend** — Active development *(private)*
+- 🤖 **tech-mentoring-africa** — Active development *(private)*
+- 🏢 **tma-backend** — Active development *(private)*
+- 💼 **prestij-software-solutions** — Active development *(private)*
 - ⚡ **onlyev** — A repo for all EV agentic marketplace *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-9%2C871-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C871" />
-  <img src="https://img.shields.io/badge/Total%20PRs-2%2C332-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C332" />
-  <img src="https://img.shields.io/badge/Total%20Issues-2%2C237-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C237" />
+  <img src="https://img.shields.io/badge/2026%20Commits-9%2C965-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 9%2C965" />
+  <img src="https://img.shields.io/badge/Total%20PRs-2%2C358-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C358" />
+  <img src="https://img.shields.io/badge/Total%20Issues-2%2C255-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C255" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-37-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 37" />
 </p>
