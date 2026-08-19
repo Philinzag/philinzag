@@ -26,9 +26,9 @@ I lead engineering at **[SOFNED](https://sofned.com)** — designing and shippin
 ### 🔭 Currently Building
 
 <!-- CURRENTLY_BUILDING:START -->
-- 🤖 **crewai-trader-v6** — Active development *(private)*
-- 🏢 **ghana-trip-2026** — Detty Vibes 2026 — Ghana homecoming trip landing page. Served at /detty-vibes on homecomingsignaturetours.com (separate Vercel project, proxied via rewrite from ghana-roots-connect). *(private)*
-- 💼 **LinkedIn-mcp** — Active development *(private)*
+- 🤖 **tsd-services-platform** — Active development *(private)*
+- 🏢 **onlyev** — A repo for all EV agentic marketplace *(private)*
+- 💼 **crewai-trader-v6** — Active development *(private)*
 - ⚡ **tech-mentoring-africa** — Active development *(private)*
 <!-- CURRENTLY_BUILDING:END -->
 
@@ -93,9 +93,9 @@ I take focused, well-scoped engagements in the areas below. Most projects run 4�
 
 <!-- STATS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/2026%20Commits-10%2C101-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 10%2C101" />
-  <img src="https://img.shields.io/badge/Total%20PRs-2%2C401-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C401" />
-  <img src="https://img.shields.io/badge/Total%20Issues-2%2C287-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C287" />
+  <img src="https://img.shields.io/badge/2026%20Commits-10%2C186-22D3EE?style=for-the-badge&logo=git&logoColor=white" alt="2026%20Commits: 10%2C186" />
+  <img src="https://img.shields.io/badge/Total%20PRs-2%2C432-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Total%20PRs: 2%2C432" />
+  <img src="https://img.shields.io/badge/Total%20Issues-2%2C313-22D3EE?style=for-the-badge&logo=githubissues&logoColor=white" alt="Total%20Issues: 2%2C313" />
   <img src="https://img.shields.io/badge/Public%20Repos-13-22D3EE?style=for-the-badge&logo=github&logoColor=white" alt="Public%20Repos: 13" />
   <img src="https://img.shields.io/badge/Stars%20Given-37-22D3EE?style=for-the-badge&logo=starship&logoColor=white" alt="Stars%20Given: 37" />
 </p>
