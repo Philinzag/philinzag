@@ -12,7 +12,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Check Currently-Building secret is configured
         id: gate
@@ -21,6 +21,9 @@ jobs:
         run: |
           if [ -z "$TOKEN" ]; then
             echo "PROFILE_READER_TOKEN not configured. Skipping Currently Building auto-update (other patches still run)."
+            echo "skip_currently_building=true" >> "$GITHUB_OUTPUT"
+          elif ! GH_TOKEN="$TOKEN" gh api user --silent 2>/dev/null; then
+            echo "::warning title=PROFILE_READER_TOKEN rejected::GitHub rejected PROFILE_READER_TOKEN (expired or revoked). Skipping Currently Building and stats; regenerate the token and update the repo secret."
             echo "skip_currently_building=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip_currently_building=false" >> "$GITHUB_OUTPUT"
